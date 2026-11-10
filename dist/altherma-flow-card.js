@@ -73,14 +73,14 @@ class AlthermaFlowCard extends HTMLElement {
   }
 
   getCardSize() { return 8; }
-  getGridOptions() { return { columns: 12, min_columns: 6, rows: 'auto' }; }
+  getGridOptions() { return { columns: 12, min_columns: 6, max_columns: 12, rows: 'auto' }; }
 
   _build() {
     if (!this.shadowRoot) this.attachShadow({ mode: 'open' });
     const title = this._cfg.title || 'Daikin Altherma 3';
     this.shadowRoot.innerHTML = `
 <style>
-  :host { display:block; }
+  :host { display:block; max-width:500px; margin:0 auto; }
   ha-card { padding:12px 12px 10px; overflow:hidden;
     --hot:#f06a3a; --mid:#f2a03d; --cold:#3d8fe0; --ref:#9b6ad6;
     --idle:var(--divider-color, rgba(127,127,127,.35)); }

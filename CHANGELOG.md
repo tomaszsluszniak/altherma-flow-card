@@ -15,5 +15,6 @@ wersje: [SemVer](https://semver.org/lang/pl/).
   ΔT, przepływ, ciśnienie (ostrzeżenie poza 1–2,8 bar), tryb jednostki, grzałki BUH/BSH
   z czasem pracy i liczbą startów, tryb cichy, alarm.
 - Kliknięcie dowolnego elementu otwiera okno szczegółów encji.
+- Stały rozmiar: karta ma maks. 500 px szerokości i nie rozciąga się na szerokich ekranach.
 
 [1.0.0]: https://github.com/tomaszsluszniak/altherma-flow-card/releases/tag/v1.0.0
